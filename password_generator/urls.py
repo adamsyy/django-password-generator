@@ -19,6 +19,8 @@ from django.urls.conf import include
 from generator import views
 import generator
 urlpatterns = [
-    path('',views.home),
+    path('',views.home,name='home'),
+    path('password/',views.password),
+    path('about/',views.about),
     path('admin/', admin.site.urls),
 ]
